@@ -61,16 +61,6 @@ namespace SolutionConverter.Properties {
         }
         
         /// <summary>
-        ///   查找类似于 (Icon) 的 System.Drawing.Icon 类型的本地化资源。
-        /// </summary>
-        internal static System.Drawing.Icon ico {
-            get {
-                object obj = ResourceManager.GetObject("ico", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
         ///   查找 System.Byte[] 类型的本地化资源。
         /// </summary>
         internal static byte[] SolutionConverterLib {
@@ -87,6 +77,16 @@ namespace SolutionConverter.Properties {
             get {
                 object obj = ResourceManager.GetObject("StringValueAttribute", resourceCulture);
                 return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似于 (Icon) 的 System.Drawing.Icon 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Icon tool {
+            get {
+                object obj = ResourceManager.GetObject("tool", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
             }
         }
     }

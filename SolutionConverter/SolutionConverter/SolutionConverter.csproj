@@ -52,7 +52,7 @@
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Resources\ico.ico</ApplicationIcon>
+    <ApplicationIcon>Resources\tool.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="StringValueAttribute, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -128,13 +128,13 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\ico.ico" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Resources\StringValueAttribute.dll" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\SolutionConverterLib.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tool.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
