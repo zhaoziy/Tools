@@ -55,9 +55,13 @@
     <ApplicationIcon>Resources\tool.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="SolutionConverterLib, Version=1.0.5838.24057, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Resources\SolutionConverterLib.dll</HintPath>
+    </Reference>
     <Reference Include="StringValueAttribute, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\SolutionConverterLib\bin\Debug\StringValueAttribute.dll</HintPath>
+      <HintPath>Resources\StringValueAttribute.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
@@ -108,12 +112,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\SolutionConverterLib\SolutionConverterLib.csproj">
-      <Project>{B18A33EF-0831-44A1-84A9-DD1D16301856}</Project>
-      <Name>SolutionConverterLib</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
