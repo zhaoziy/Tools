@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Reflection;
-
-namespace SolutionConverter
+﻿namespace SolutionConverter
 {
+	using System;
+	using System.Collections.Generic;
+	using System.Diagnostics;
+	using System.Reflection;
+
 	static class LoadResourceDll
 	{
 		static Dictionary<string, Assembly> Dlls = new Dictionary<string, Assembly>();

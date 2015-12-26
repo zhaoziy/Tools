@@ -1,10 +1,6 @@
 ﻿namespace SolutionConverterLib
 {
     using System;
-    using System.Collections.Generic;
-    using System.ComponentModel;
-    using System.Linq;
-    using System.Text;
 
     /// <summary>
     /// 所有可能的解决方案列表的版本。

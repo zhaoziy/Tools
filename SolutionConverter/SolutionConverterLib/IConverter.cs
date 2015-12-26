@@ -1,9 +1,5 @@
 ﻿namespace SolutionConverterLib
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
 
     /// <summary>
     /// 一个接口描述对象的所有转换器。

@@ -1,12 +1,6 @@
 ﻿namespace SolutionConverter
 {
     using System;
-    using System.Collections.Generic;
-    using System.ComponentModel;
-    using System.Data;
-    using System.Drawing;
-    using System.IO;
-    using System.Linq;
     using System.Text;
     using System.Windows.Forms;
     using SolutionConverterLib;
@@ -205,8 +199,9 @@
                 solVer = VisualStudioVersion.VisualStudio2015;
             }
 
-            ConversionResult result = this.solutionConverter.ConvertTo(solVer, ideVer);
-            if (result.ConversionStatus == ConversionStatus.Succeeded)
+			ConversionResult result = this.solutionConverter.ConvertTo(solVer, ideVer);
+			
+			if (result.ConversionStatus == ConversionStatus.Succeeded)
             {
                 MessageBox.Show(ConversionStatus.Succeeded.GetStringValue(), "成功！", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.ResetForm();
