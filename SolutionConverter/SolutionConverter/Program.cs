@@ -17,7 +17,8 @@
         [STAThread]
         public static void Main(string[] args)
         {
-            Application.EnableVisualStyles();
+			LoadResourceDll.RegistDLL();
+			Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             if (args.Length > 0)
             {
