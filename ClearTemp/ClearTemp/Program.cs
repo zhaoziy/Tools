@@ -13,6 +13,7 @@ namespace ClearTemp
 			DirFolder(path, "x64");
 			DirFolder(path, "debug");
 			DirFolder(path, ".vs");
+			DirFolder(path, "ipch");
 			DirFolder(path, "bin");
 			DirFolder(path, "obj");
 			DeleteFile(path, "sdf");
@@ -27,35 +28,12 @@ namespace ClearTemp
 				{
 					string[] array = d.Split(new char[] { '\\' });
 					string end = array[array.Length - 1];
-					if (end == dir)
+					if (end.ToLower() == dir)
 					{
 						DeleteFolder(d);
 						Console.WriteLine(d);
 					}
 					DirFolder(d, dir);
-				}
-			}
-		}
-
-		public static void DeleteFile1(string path)
-		{
-			foreach (string d in Directory.GetFileSystemEntries(path))
-			{
-				if (File.Exists(d))
-				{
-					string[] array = d.Split(new char[] { '.' });
-					string fileend = array[array.Length - 1];
-				
-					try
-					{
-						File.Delete(d);
-						Console.WriteLine(d);
-					}
-					catch (Exception ex) { }
-				}
-				else
-				{
-					DeleteFile1(d);
 				}
 			}
 		}
@@ -106,13 +84,14 @@ namespace ClearTemp
 				else
 				{
 					DeleteFolder(d);////递归删除子文件夹
+					try
+					{
+						DirectoryInfo dir1 = new DirectoryInfo(d);
+						dir1.Delete(true);
+						Console.WriteLine(d);
+					}
+					catch (Exception ex) { }
 				}
-				try
-				{
-					Directory.Delete(d);
-					Console.WriteLine(d);
-				}
-				catch (Exception ex) { }
 			}
 		}
 	}
